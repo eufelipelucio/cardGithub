@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Github</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="/assets/img/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <input type="text" id="input" placeholder="Digite o nome do usuário do github">
+            <button id="btn">BUSCAR</button>
+        </div>
+        <span class="invisivel" id="msg">Erro ao carregar usuário</span>        
+        <div class="card invisivel" > 
+            <div class="logo">
+                <img src="assets/img/Logo.png" alt="Logo">
+            </div>
+            <div id="imagem" class="img-profile">
+                <!-- <img src="assets/img/Profile.jpg" alt="Profile"> -->
+            </div>
+            <div class="name">
+                <h1 class="user" id="name"></h1>
+                <p id="description"></p>
+            </div> 
+            <div class="location">
+                <p id="location"></p>
+            </div>
+            <div class="social">
+                <div class="social-item">
+                    <a class="github"> 
+                        <img src="assets/img/github.png" alt="Github">
+                    </a>
+                </div>
+                <div class="social-item">
+                    <img src="assets/img/Group.png" alt="Followers">
+                    <p id="followers"></p>
+                </div>
+                <div class="social-item">
+                    <img src="assets/img/following.png" alt="Following">
+                    <p id="following"></p>
+                </div>
+                <div class="social-item">
+                    <img src="assets/img/Repo.png" alt="Repositories">
+                    <p id="repo"></p>        
+                </div>
+            </div> 
+       </div>
+    </main>
+    <script src="./js/script.js"></script>
+    <script src="./js/card.js"></script>
+    
+</body>
+</html> 
